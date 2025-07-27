@@ -22,14 +22,14 @@
 
 ### 2. Build the application using Maven:
    ```bash
-   mvn clean install
+   ./mvnw clean install
    ```
 
 ### 3. Run the application:
 - Make sure you have Java 21 and Maven installed.
 - Navigate to the project directory and run:
    ```bash
-   mvn spring-boot:run
+   ./mvnw spring-boot:run
    ```
 - Once started, the application will be available at:
     ```
