@@ -71,7 +71,7 @@ SmartLoanAppAPI is a backend application built with Spring Boot, designed to han
     http://localhost:8080
     ```
 
-## 3. For Frontend (SmartLoanAppUI)
+## 3. For Frontend (SmartLoanAppClient)
 
 ### 3.1 Access the frontend directory:
 
@@ -102,4 +102,46 @@ npm run start
 
    ```bash
    cd Step3-Application-implementation/database/SmartLoanAppDB
+   ```
+
+### 4.2 Setup the virtual environment and install dependencies:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+### 4.3 Example of how to run the python files
+   ```bash
+python -m venv venv
+   ```
+
+   ```bash
+source /Users/daniel/2507ADP/macos/venv/bin/activate
+   ```
+
+   ```bash
+pip install -r requirements.txt
+   ```
+
+4.3.1 To run the SmartLoanAppDB application, you can use the following command:
+
+   ```bash
+python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/app.py
+   ```
+4.3.2 To query the database and generate CSV files, you can run the following command:
+   ```bash
+python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/x-GENERATE-csv.py
+   ```
+
+   ```bash
+python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/x-DELETE-db.py
+   ```
+
+   ```bash
+python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/x-DELETE-csv-output.py
+   ```
+
+   ```bash
+python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/app.py
    ```

@@ -6,7 +6,7 @@ from constants import output_folder  # Import the output_folder from constants.p
 os.makedirs(output_folder, exist_ok=True)
 
 # Connect to the SQLite database
-conn = sqlite3.connect('path/Step3-Application-implementation/database/SmartLoanAppDB/app.db')
+conn = sqlite3.connect('/Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/SmartLoanAppDB.db')
 cursor = conn.cursor()
 
 # Get the list of all tables

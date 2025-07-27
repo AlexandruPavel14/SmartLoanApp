@@ -1,4 +1,4 @@
-output_folder = 'path/Step3-Application-implementation/database/SmartLoanAppDB/Plots'
+output_folder = '/Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/Plots'
 
 db_files = [
     'path/Step3-Application-implementation/database/SmartLoanAppDB/app.db-shm',

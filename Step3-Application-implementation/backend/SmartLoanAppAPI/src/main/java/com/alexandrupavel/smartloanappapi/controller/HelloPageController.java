@@ -1,4 +1,4 @@
-package com.alexandrupavel.smartloanappapi.controllers;
+package com.alexandrupavel.smartloanappapi.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
