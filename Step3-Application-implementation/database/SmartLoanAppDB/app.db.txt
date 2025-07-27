@@ -1,0 +1,1 @@
+The actual database will be saved in this format, but with a different extension. (app.db)

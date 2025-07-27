@@ -45,7 +45,6 @@ SmartLoanAppAPI is a backend application built with Spring Boot, designed to han
 ## 1. Clone the repository:
    ```bash
    git clone https://github.com/AlexandruPavel14/SmartLoanApp.git
-   cd Step3-Application-implementation/backend/SmartLoanAppAPI
    ```
 
 ## 2. For Backend (SmartLoanAppAPI)
@@ -77,7 +76,7 @@ SmartLoanAppAPI is a backend application built with Spring Boot, designed to han
 ### 3.1 Access the frontend directory:
 
    ```bash
-   cd Application-implementation/frontend/smartloanappclient
+   cd Step3-Application-implementation/frontend/smartloanappclient
    ```
 
 ### 3.2 Install all dependencies:
@@ -102,5 +101,5 @@ npm run start
 ### 4.1 Access the database directory:
 
    ```bash
-   cd Application-implementation/database/SmartLoanAppDB
+   cd Step3-Application-implementation/database/SmartLoanAppDB
    ```
