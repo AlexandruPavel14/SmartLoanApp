@@ -1,1 +1,3 @@
-WIP - work in progress
+# Step 4: User Guide – SmartLoanApp
+
+
