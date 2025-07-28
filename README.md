@@ -59,7 +59,7 @@ Together, these components form a scalable and realistic financial system with s
 ### 2.1 Access the backend directory:
 
    ```bash
-   cd backend/SmartLoanAppAPI
+   cd Step3-Application-implementation/backend/SmartLoanAppAPI
    ```
 
 ### 2.2 Build the application using Maven:
@@ -150,9 +150,9 @@ python /Users/daniel/Desktop/projectING/Step3-Application-implementation/databas
    ```
 
    - Once started, the application will be available at:
-    ```
-    http://localhost:8000
-    ```
+   ```
+   http://localhost:8000
+   ```
 
 4.3.2 To query the database and generate CSV files, you can run the following command:
    ```bash
@@ -171,4 +171,5 @@ python /Users/daniel/Desktop/projectING/Step3-Application-implementation/databas
 python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/app.py
    ```
 
-# Thank you!
+<!-- # Thank you! -->
+<h1 align="center">Thank you for your attention!</h1>
