@@ -1,8 +1,14 @@
-<img width="1024" height="325" alt="logo2" src="https://github.com/user-attachments/assets/04896e84-ecaf-4020-aa78-6160f923574a" />
+<!-- <img width="1024" height="325" alt="logo2" src="https://github.com/user-attachments/assets/04896e84-ecaf-4020-aa78-6160f923574a" /> -->
+![logo2](assets/logo2.png)
 
 # General description
 
-SmartLoanAppAPI is a backend application built with Spring Boot, designed to handle loan requests efficiently and securely. The project provides a scalable foundation for modern financial services, simulating a lightweight digital lending platform.
+**SmartLoanApp** is a modular full-stack application that simulates a modern, secure, and ESG-aware loan management platform. The system is composed of three core components:
+1. A **Spring Boot REST API** (SmartLoanAppAPI) that handles business logic, loan processing, and secure user interactions.
+2. A **ReactJS frontend** (SmartLoanAppClient) that provides an intuitive interface for loan applicants and reviewers.
+3. A **Python-based SQLite backend utility** (SmartLoanAppDB) that supports data analysis, reporting, and CSV generation — ideal for rapid prototyping or integration with external data sources.
+
+Together, these components form a scalable and realistic financial system with support for green loans, ESG scoring, role-based access control, and secure document management.
 
 # Main features
 
@@ -17,6 +23,7 @@ SmartLoanAppAPI is a backend application built with Spring Boot, designed to han
 * **Access Control (Entitlements)** – Fine-grained access control using entitlement definitions.
 * **Historical Data Tracking** – Keep track of past income, company history, application status changes, and reviews.
 * **Clean Architecture** – Designed to support scalable backend infrastructure and modern financial workflows.
+
 # Project Steps
 
 - [Step 1: Software Analysis](Step1-Software-analysis/Step1.md)
@@ -60,7 +67,19 @@ SmartLoanAppAPI is a backend application built with Spring Boot, designed to han
    ./mvnw clean install
    ```
 
-### 2.3 To start the development server, run:
+### 2.3 Project structure: 
+
+![Spring MVC Architecture](assets/spring-mvc-arhitecture.png)
+
+- `com.alexandrupavel.smartloanappapi.controller`: Handles HTTP requests and responses. Acts as the entry point for the API and delegates operations to the service layer. 
+- `com.alexandrupavel.smartloanappapi.dto`: Defines Data Transfer Objects used to transfer data between the client and server, without exposing the internal model structure.  
+- `com.alexandrupavel.smartloanappapi.model`: Represents the core domain entities mapped to database tables using JPA annotations. 
+- `com.alexandrupavel.smartloanappapi.repository`: Contains interfaces for data access operations, typically extending JpaRepository or other Spring Data interfaces.
+- `com.alexandrupavel.smartloanappapi.service`: Contains business logic and service methods. It serves as a bridge between controllers and repositories.
+- `com.alexandrupavel.smartloanappapi.util`: Contains utility and helper classes such as mappers or converters that support logic across multiple layers.
+- `com.alexandrupavel.smartloanappapi.validator`: Contains custom validators and validation logic, often used with annotations or in DTO validation scenarios.
+
+### 2.4 To start the development server, run:
 - Make sure you have Java 21 and Maven installed.
 - Navigate to the project directory and run:
    ```bash
@@ -129,6 +148,12 @@ pip install -r requirements.txt
    ```bash
 python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/app.py
    ```
+
+   - Once started, the application will be available at:
+    ```
+    http://localhost:8000
+    ```
+
 4.3.2 To query the database and generate CSV files, you can run the following command:
    ```bash
 python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/x-GENERATE-csv.py
@@ -145,3 +170,5 @@ python /Users/daniel/Desktop/projectING/Step3-Application-implementation/databas
    ```bash
 python /Users/daniel/Desktop/projectING/Step3-Application-implementation/database/SmartLoanAppDB/app.py
    ```
+
+# Thank you!
